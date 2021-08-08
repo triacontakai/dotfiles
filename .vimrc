@@ -1,3 +1,9 @@
+function! SourceIfExists(file)
+  if filereadable(expand(a:file))
+    exe 'source' a:file
+  endif
+endfunction
+
 " i kinda like default vim tbh lel
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
@@ -6,7 +12,7 @@ set nocompatible              " be iMproved, required
 
 filetype plugin indent on    " required
 
-source /etc/vimrc
+call SourceIfExists("/etc/vimrc")
 autocmd BufRead,BufNewFile *.asm set filetype=nasm
 autocmd BufRead,BufNewFile *.S set filetype=nasm
 set tags=tags;/
