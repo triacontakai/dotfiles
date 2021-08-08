@@ -163,6 +163,7 @@ complete -F _complete_alias config
 alias sage='PWNLIB_NOTERM=true sage'
 alias hibernate='systemctl hibernate'
 alias getstub='cp ~/ctf/utils/stub.py'
+alias pwnenv='~/ctf/utils/docker/startdocker.sh'
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
