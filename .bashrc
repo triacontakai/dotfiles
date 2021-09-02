@@ -123,8 +123,7 @@ nocolor () {
 clip() {
 	contents=$(cat $1)
 
-	echo -n "$contents" | xclip -selection CLIPBOARD
-	echo -n "$contents" | xclip -selection PRIMARY
+	echo -n "$contents" | xsel -bp
 }
 
 mcd () {
@@ -165,7 +164,7 @@ alias hibernate='systemctl hibernate'
 alias getstub='cp ~/ctf/utils/stub.py'
 alias pwnenv='~/ctf/utils/docker/startdocker.sh'
 
-export PATH="$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:~/ctf/utils"
 
 # i like tmux
 function start_tmux() {

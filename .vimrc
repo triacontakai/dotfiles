@@ -6,7 +6,7 @@ endfunction
 
 " i kinda like default vim tbh lel
 unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+call SourceIfExists("$VIMRUNTIME/defaults.vim")
 
 set nocompatible              " be iMproved, required
 
