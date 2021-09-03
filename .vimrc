@@ -23,3 +23,9 @@ set nu rnu
 " mouse bad
 set mouse=
 set ttymouse=
+
+" tabs bad
+set tabstop 	=4
+set softtabstop =4
+set shiftwidth	=4
+set expandtab
