@@ -163,6 +163,7 @@ alias sage='PWNLIB_NOTERM=true sage'
 alias hibernate='systemctl hibernate'
 alias getstub='cp ~/ctf/utils/stub.py'
 alias pwnenv='~/ctf/utils/docker/startdocker.sh'
+alias grace='sshpass -f ~/.gracepass ssh akotlia1@grace.umd.edu'
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:~/ctf/utils"
 
